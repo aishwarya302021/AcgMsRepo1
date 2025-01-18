@@ -1,0 +1,21 @@
+{
+	"name": "taxiridesparquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "acgmsdatalake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Taxirides.parquet",
+				"folderPath": "OUTPUT",
+				"fileSystem": "taxidata"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
